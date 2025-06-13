@@ -1,0 +1,88 @@
+/* Main Colors */
+:root {
+  --primary: #00ADEF;     /* JetSky Blue */
+  --background: #FFFFFF;  /* Clean White */
+  --accent: #F0F8FF;      /* Light Sky Tint */
+  --text: #1C1C1C;        /* Charcoal Black */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--accent);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.logo p {
+  margin-top: 4px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+main {
+  padding: 2rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008fc9;
+}
+
+.search-btn {
+  display: flex;
+  align-items: end;
+}
